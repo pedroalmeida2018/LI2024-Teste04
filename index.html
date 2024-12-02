@@ -10,21 +10,44 @@
 <body>
     <div class="container-fluid">
         <form>
-                    <label>Email</label>
-                    <input type="email" class="form-control" required>
-                   </div>
-                    <div class="form-group col-6">
-                    <label>Assunto</label>
-                    <input type="text" class="form-control" required>
-                    </div>
-                    <div class="form-group col-6">
-                        <label>Mensagem</label>
-                        <input type="text" class="form-control" required>
-                        </div>
-                        <button type="button" class="btn btn-primary">enviar</button>
-                        <button type="button" class="btn btn-dark">cancelar</button>
-                        
-
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-4">
+                              <label for="validationCustom01" class="form-label">Email</label>
+                              <input type="text" class="form-control" id="validationCustom01" value="email" required>
+                              <div class="valid-feedback">
+                                Sucesso!
+                              </div>
+                              <div class="invalid-feedback">
+                                Por favor, escreva o seu email!
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <label for="validationCustom02" class="form-label">Assunto</label>
+                              <input type="text" class="form-control" id="validationCustom02" value="assunto" required>
+                              <div class="valid-feedback">
+                                Sucesso!
+                              </div>
+                              <div class="invalid-feedback">
+                                Por favor, coloque o assunto!
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustom01" class="form-label">Mensagem</label>
+                                <input type="text" class="form-control" id="validationCustom01" value="mensagem" required>
+                                <div class="valid-feedback">
+                                  Sucesso!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor, escreva a sua mensagem!
+                                  </div>
+                              </div>
+                           
+                            
+                            <div class="col-12">
+                              <button class="btn btn-primary" type="submit">Enviar</button>
+                              <button type="button" class="btn btn-dark">Cancelar</button>
+                            </div>
+                          </form>
   
                 </form>
     </div>
